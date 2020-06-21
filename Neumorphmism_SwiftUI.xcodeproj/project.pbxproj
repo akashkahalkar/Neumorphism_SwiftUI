@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A4AB176249E606300DF9D1E /* Test_animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A4AB176249E606300DF9D1E /* Neuomorphism_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neuomorphism_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A4AB179249E606300DF9D1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A4AB17B249E606300DF9D1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3A4AB17D249E606300DF9D1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		3A4AB177249E606300DF9D1E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A4AB176249E606300DF9D1E /* Test_animations.app */,
+				3A4AB176249E606300DF9D1E /* Neuomorphism_SwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,9 +78,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A4AB175249E606300DF9D1E /* Test_animations */ = {
+		3A4AB175249E606300DF9D1E /* Neumorphmism_SwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A4AB18A249E606400DF9D1E /* Build configuration list for PBXNativeTarget "Test_animations" */;
+			buildConfigurationList = 3A4AB18A249E606400DF9D1E /* Build configuration list for PBXNativeTarget "Neumorphmism_SwiftUI" */;
 			buildPhases = (
 				3A4AB172249E606300DF9D1E /* Sources */,
 				3A4AB173249E606300DF9D1E /* Frameworks */,
@@ -90,9 +90,9 @@
 			);
 			dependencies = (
 			);
-			name = Test_animations;
+			name = Neumorphmism_SwiftUI;
 			productName = Test_animations;
-			productReference = 3A4AB176249E606300DF9D1E /* Test_animations.app */;
+			productReference = 3A4AB176249E606300DF9D1E /* Neuomorphism_SwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3A4AB171249E606300DF9D1E /* Build configuration list for PBXProject "Test_animations" */;
+			buildConfigurationList = 3A4AB171249E606300DF9D1E /* Build configuration list for PBXProject "Neumorphmism_SwiftUI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A4AB175249E606300DF9D1E /* Test_animations */,
+				3A4AB175249E606300DF9D1E /* Neumorphmism_SwiftUI */,
 			);
 		};
 /* End PBXProject section */
@@ -293,7 +293,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "akash.github.io.Test-animations";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Neuomorphism_SwiftUI;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "akash.github.io.Test-animations";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Neuomorphism_SwiftUI;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,7 +321,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A4AB171249E606300DF9D1E /* Build configuration list for PBXProject "Test_animations" */ = {
+		3A4AB171249E606300DF9D1E /* Build configuration list for PBXProject "Neumorphmism_SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A4AB188249E606400DF9D1E /* Debug */,
@@ -330,7 +330,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A4AB18A249E606400DF9D1E /* Build configuration list for PBXNativeTarget "Test_animations" */ = {
+		3A4AB18A249E606400DF9D1E /* Build configuration list for PBXNativeTarget "Neumorphmism_SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A4AB18B249E606400DF9D1E /* Debug */,

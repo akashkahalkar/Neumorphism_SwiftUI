@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Test_animations.xcodeproj">
+      location = "self:/Users/kahalkar/Documents/Neumorphism_SwiftUI/Neumorphmism_SwiftUI.xcodeproj">
    </FileRef>
 </Workspace>
