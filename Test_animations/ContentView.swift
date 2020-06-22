@@ -55,7 +55,7 @@ struct ContentView: View {
                                 radius: CGFloat(self.shadowBlur), x: CGFloat(self.shadowOffset), y: CGFloat(self.shadowOffset))
                         .onTapGesture {
                             self.tapped.toggle()
-                    }
+                    }.animation(.easeIn)
                     Spacer()
                     ZStack(alignment: .leading) {
                         Rectangle().fill(LinearGradient(gradient: Gradient(colors: self.colors),
@@ -67,7 +67,7 @@ struct ContentView: View {
                                     .onChanged({ (value) in
                                         self.dragOffset = value.translation
                                         self.xOffset = value.location.x
-                                        self.startLocation = value.startLocation.y
+                                        self.startLocation = value.startLocation.x
                                         self.chosenColor = self.currentColor
                                         self.isDragging = true
                                     }).onEnded({ (_) in
@@ -78,8 +78,8 @@ struct ContentView: View {
                             .frame(width: self.circleWidth())
                             .overlay(Circle().stroke(Color.white, lineWidth: 2))
                             .foregroundColor(self.chosenColor)
-                            .offset(x: self.xOffset , y: self.isDragging ? -self.circleWidth() : 0.0)
-                    }.frame(height: 40).animation(Animation.spring().speed(1))
+                            .offset(x: self.normalizedX() , y: self.isDragging ? -self.circleWidth() : 0.0).animation(.easeInOut)
+                    }.frame(height: 40)
                     
                     ZStack {
                         RoundedRectangle(cornerRadius: 10).frame(height: 60).padding(8)
@@ -151,8 +151,12 @@ struct ContentView: View {
         return minY
     }
     
+    private func normalizedX() -> CGFloat {
+         return min(max(0, self.xOffset), linearGradientWidth - circleWidth())
+    }
+    
     private func circleWidth() -> CGFloat {
-        return isDragging ? 25 : 20
+        return isDragging ? 25 : 0
     }
     
     private func getGradientColor(for pickerValue: Int) -> [Color] {
