@@ -20,6 +20,7 @@ struct ContentView: View {
     @State private var isDragging: Bool = false
     @State private var startLocation: CGFloat = .zero
     @State private var dragOffset: CGSize = .zero
+    @State private var xOffset: CGFloat = .zero
     @State var chosenColor: Color  = Color(#colorLiteral(red: 0.5077621341, green: 0.05276752263, blue: 0, alpha: 1))
     private var linearGradientWidth: CGFloat = 300
     private var colors: [Color] = {
@@ -59,12 +60,13 @@ struct ContentView: View {
                     ZStack(alignment: .leading) {
                         Rectangle().fill(LinearGradient(gradient: Gradient(colors: self.colors),
                                                         startPoint: .leading, endPoint: .trailing))
-                            .frame(width: self.linearGradientWidth, height: 10)
+                            .frame(width: self.linearGradientWidth, height: 30)
                             .clipShape(RoundedRectangle(cornerRadius: 5))
                             .gesture(
                                 DragGesture()
                                     .onChanged({ (value) in
                                         self.dragOffset = value.translation
+                                        self.xOffset = value.location.x
                                         self.startLocation = value.startLocation.y
                                         self.chosenColor = self.currentColor
                                         self.isDragging = true
@@ -76,7 +78,7 @@ struct ContentView: View {
                             .frame(width: self.circleWidth())
                             .overlay(Circle().stroke(Color.white, lineWidth: 2))
                             .foregroundColor(self.chosenColor)
-                            .offset(x: self.normalizeGesture() , y: self.isDragging ? -self.circleWidth() : 0.0)
+                            .offset(x: self.xOffset , y: self.isDragging ? -self.circleWidth() : 0.0)
                     }.frame(height: 40).animation(Animation.spring().speed(1))
                     
                     ZStack {
@@ -150,7 +152,7 @@ struct ContentView: View {
     }
     
     private func circleWidth() -> CGFloat {
-        return isDragging ? 15 : 10
+        return isDragging ? 25 : 20
     }
     
     private func getGradientColor(for pickerValue: Int) -> [Color] {
