@@ -19,7 +19,7 @@ Created a demo to play with the Shadows and to understand the Neuomorphism in mo
 ### Articles
 - [neumorphism.io](https://neumorphism.io/)
 - [Color picker](https://github.com/bbaars/SwiftUI-Gradient-ColorPicker/blob/master/ColorPicker/ColorPickerView.swift)
--[Design code](https://designcode.io)
+- [Design code](https://designcode.io)
 
 ### Video Links
 - [How to use Neuomorphism in swift UI](https://www.youtube.com/watch?v=z3tJdxwlo_Y)
