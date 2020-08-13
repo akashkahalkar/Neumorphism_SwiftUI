@@ -39,6 +39,8 @@ struct ContentView: View {
     @State private var dragOffset: CGSize = .zero
     @State private var xOffset: CGFloat = .zero
     @State var chosenColor: Color  = Color(#colorLiteral(red: 0.5077621341, green: 0.05276752263, blue: 0, alpha: 1))
+    @State var pickerValue: Int = 0
+    
     private var linearGradientWidth: CGFloat = 300
     private var colors: [Color] = {
         let hueValues = Array(0...255)
@@ -49,8 +51,8 @@ struct ContentView: View {
                           alpha: 1.0))
         }
     }()
-    var shapeStyle = ["Plain", "Concave", "Convex"]
-    @State var pickerValue: Int = 0
+    private let shapeStyle = ["Plain", "Concave", "Convex"]
+    
     
     var body: some View {
         
@@ -60,7 +62,8 @@ struct ContentView: View {
                 VStack(spacing: 5){
                     Rectangle()
                         .fill(LinearGradient(gradient: Gradient(colors: self.getGradientColor(for: self.pickerValue)),
-                                             startPoint: .topLeading, endPoint: .bottomTrailing))
+                                             startPoint: .topLeading,
+                                             endPoint: .bottomTrailing))
                         .foregroundColor(self.chosenColor)
                         .frame(width: CGFloat(self.shapeSize), height: CGFloat(self.shapeSize))
                         .clipShape(RoundedRectangle(cornerRadius: CGFloat(self.shapeRadius)))
@@ -129,7 +132,7 @@ struct ContentView: View {
     }
     /// Get the current color based on our current translation within the view
     private var currentColor: Color {
-        Color(UIColor.init(hue: self.normalizeGesture() / linearGradientWidth, saturation: 1.0, brightness: 0.5, alpha: 1.0))
+        Color(UIColor.init(hue: self.normalizeGesture() / linearGradientWidth, saturation: 1.0, brightness: 0.7, alpha: 1.0))
     }
     
     private var currentColorLight: Color {
