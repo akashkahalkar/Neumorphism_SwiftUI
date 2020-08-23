@@ -1,5 +1,7 @@
 # Neuomorphism in Swift UI
 
+![Build](https://github.com/akashkahalkar/Neumorphism_SwiftUI/workflows/Build/badge.svg)
+
 Created a demo to play with the Shadows and to understand the Neuomorphism in more detail, Inspired by [neumorphism.io](https://neumorphism.io/)
 
 
