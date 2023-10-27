@@ -4,7 +4,6 @@
 
 Created a demo to play with the Shadows and to understand the Neuomorphism in more detail, Inspired by [neumorphism.io](https://neumorphism.io/)
 
-
 ### Version
 > Swift 5, iOS 13, Xcode 11.3
 
@@ -12,7 +11,7 @@ Created a demo to play with the Shadows and to understand the Neuomorphism in mo
 <table>
     <tr>
         <td>
-            <img src = "screenshot\screen_1.png" width = 200 alt = "Neuomorphism play ground">
+            <img src = "https://github.com/akashkahalkar/Neumorphism_SwiftUI/assets/9389352/81bec8e7-281e-4411-bcc9-f29af2fdc02a" width = 200 alt = "Neuomorphism playground">
         </td>
     </tr>
 </table>
